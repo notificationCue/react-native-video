@@ -154,15 +154,24 @@ dependencies {
     implementation "androidx.core:core:$androidxCode_version"
 
     // For media playback using ExoPlayer
-    implementation "androidx.media3:media3-exoplayer:$media3_version"
+    
+    // implementation "androidx.media3:media3-exoplayer:$media3_version"
 
-    // For Smooth Streaming playback support with ExoPlayer
-    implementation "androidx.media3:media3-exoplayer-smoothstreaming:$media3_version"
-    // For DASH playback support with ExoPlayer
-    implementation "androidx.media3:media3-exoplayer-dash:$media3_version"
-    // For HLS playback support with ExoPlayer
-    implementation "androidx.media3:media3-exoplayer-hls:$media3_version"
+    // // For Smooth Streaming playback support with ExoPlayer
+    // implementation "androidx.media3:media3-exoplayer-smoothstreaming:$media3_version"
+    // // For DASH playback support with ExoPlayer
+    // implementation "androidx.media3:media3-exoplayer-dash:$media3_version"
+    // // For HLS playback support with ExoPlayer
+    // implementation "androidx.media3:media3-exoplayer-hls:$media3_version"
     // For ad insertion using the Interactive Media Ads SDK with ExoPlayer
+
+    // ExoPlayer dependencies
+    implementation "com.google.android.exoplayer:exoplayer-core:2.10.1"
+    implementation "com.google.android.exoplayer:exoplayer-smoothstreaming:2.10.1"
+    implementation "com.google.android.exoplayer:exoplayer-dash:2.10.1"
+    implementation "com.google.android.exoplayer:exoplayer-hls:2.10.1"
+    implementation "com.google.android.exoplayer:exoplayer-ui:2.10.1"
+
     if (useExoplayerIMA) {
         implementation "androidx.media3:media3-exoplayer-ima:$media3_version"
     }
